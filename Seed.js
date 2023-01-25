@@ -3,13 +3,13 @@ import { StyleSheet, View, Text, StatusBar, Image , Button } from 'react-native'
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 const bip39 = require('bip39')
-const wallet = require('ethereum-hdwallet')
-import {createWallet, mnemonicsGenerator} from 'react-native-btc-eth-wallet';
+//const wallet = require('ethereum-hdwallet')
+//import {createWallet, mnemonicsGenerator} from 'react-native-btc-eth-wallet';
 export default function Seed ({navigation}) {
     var key = bip39.generateMnemonic()
     var keys = key.split(' ')
     var status = 0
-    const hdWallet = wallet.fromMnemonic(key)
+    //const hdWallet = wallet.fromMnemonic(key)
     
   
     const hide = () => {
@@ -37,7 +37,7 @@ export default function Seed ({navigation}) {
             <Text >11 . {keys[10]}</Text>
             <Text >12 . {keys[11]}</Text>
             <Text/>
-            <Text>{hdWallet.derive().getAddress().toString('hex')}</Text>
+            
             
         </View>
     )
