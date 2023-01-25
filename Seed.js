@@ -10,7 +10,10 @@ export default function Seed ({navigation}) {
     var keys = key.split(' ')
     var status = 0
     //const hdWallet = wallet.fromMnemonic(key)
-    
+    //wallet = hdWallet.derive(`m/44/60/'/0'/0`)
+    //mywallet.derive(1).getAddress().toString('hex')
+    //mywallet.derive(2).getAddress().toString('hex')
+    //mywallet.derive(3).getAddress().toString('hex')
   
     const hide = () => {
       for(var i =0;i<12;i++)
